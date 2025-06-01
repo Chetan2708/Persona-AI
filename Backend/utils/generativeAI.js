@@ -1,5 +1,6 @@
 import { GoogleGenAI } from "@google/genai";
-
+import * as dotenv from 'dotenv'
+dotenv.config();
 const genAI = new GoogleGenAI({
   apiKey: process.env.ApiKey,
 });
@@ -11,8 +12,6 @@ export const generateResponse = async (messages) => {
         parts: [{ text: msg.content }]
       };
     });
-
-    console.log("Converted Messages:", convertedMessages);
 
     const response = await genAI.models.generateContent({
       model: "gemini-1.5-flash",

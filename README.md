@@ -9,8 +9,10 @@ Persona-AI/
 ├── persona-Hitesh/      
 └── README.md
 
-Frontend 
+Get started 
 git clone https://github.com/Chetan2708/Persona-AI.git
+
+Frontend 
 cd Persona-AI
 npm i 
 npm run dev
